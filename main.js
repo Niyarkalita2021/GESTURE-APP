@@ -56,4 +56,9 @@ function gotResult(error, results) {
             document.getElementById("update_emoji").innerHTML ="&#9996;";
         }
     }
+    function check()
+{
+    img = document.getElementById('captured_image');
+    classifier.classify(img, gotResult);
+}
 }
